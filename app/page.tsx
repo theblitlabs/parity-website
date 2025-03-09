@@ -5,7 +5,6 @@ import { BackgroundPattern } from "./components/ui/BackgroundPattern";
 import { Header } from "./components/layout/Header";
 import { Footer } from "./components/layout/Footer";
 import { HeroSection } from "./components/sections/HeroSection";
-import { FeaturesSection } from "./components/sections/FeaturesSection";
 import { TechnologySection } from "./components/sections/TechnologySection";
 import { CtaSection } from "./components/sections/CtaSection";
 
@@ -15,7 +14,6 @@ export default function Home() {
       <BackgroundPattern />
       <Header />
       <HeroSection />
-      <FeaturesSection />
       <TechnologySection />
       <CtaSection />
       <Footer />
