@@ -123,13 +123,13 @@ export const CtaSection = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="inline-block px-4 py-1 border border-[#00EFA6]/20 text-xs uppercase tracking-wider text-[#00EFA6]/70 mb-4"
           >
-            Coming Soon
+            Parity Protocol Beta
           </motion.span>
 
           <h2
             className={`text-4xl sm:text-5xl md:text-6xl text-white/90 ${instrumentSerif.className}`}
           >
-            Be the First to Know
+            Join the Future of Computing
           </h2>
 
           <motion.p
@@ -138,9 +138,9 @@ export const CtaSection = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="text-lg sm:text-xl text-white/60 max-w-2xl mx-auto"
           >
-            Join our waitlist to get early access to the future of decentralized
-            computing. Be among the first to experience our revolutionary
-            platform.
+            Be among the first to experience Parity Protocol by Blit Labs. Join
+            our waitlist to get early access to the future of decentralized
+            computing and exclusive benefits.
           </motion.p>
 
           <div className="flex flex-col items-center justify-center gap-4 mt-12">
@@ -192,8 +192,8 @@ export const CtaSection = () => {
             transition={{ duration: 0.5, delay: 0.6 }}
             className="text-sm text-white/40 mt-6"
           >
-            Be notified when we launch and receive exclusive early access
-            benefits
+            Get notified about Parity Protocol's launch and receive exclusive
+            early access benefits from Blit Labs
           </motion.p>
         </motion.div>
 

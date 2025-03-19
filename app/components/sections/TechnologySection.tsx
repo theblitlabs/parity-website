@@ -75,7 +75,7 @@ export const TechnologySection = () => {
             >
               <div className="sticky top-8">
                 <div className="mb-4 text-[#00EFA6] text-sm tracking-widest uppercase">
-                  Our Technology
+                  Parity Protocol Technology
                 </div>
                 <h2 className="text-5xl lg:text-6xl font-light tracking-tight text-white/90 mb-8">
                   <span className={instrumentSerif.className}>Advanced</span>{" "}
@@ -83,9 +83,10 @@ export const TechnologySection = () => {
                 </h2>
                 <div className="h-[1px] w-16 bg-[#00EFA6]/20 mb-8" />
                 <p className="text-lg text-white/60 leading-relaxed">
-                  Our platform combines advanced distributed computing
-                  technologies with robust verification mechanisms to deliver
-                  reliable and efficient computational solutions.
+                  Blit Labs has engineered Parity Protocol to combine advanced
+                  distributed computing technologies with robust verification
+                  mechanisms, delivering reliable and efficient computational
+                  solutions at scale.
                 </p>
               </div>
             </motion.div>

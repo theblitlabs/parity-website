@@ -5,6 +5,7 @@ import { Section } from "../ui/Section";
 import { Card } from "../ui/Card";
 import { GridPattern } from "../ui/GridPattern";
 import React from "react";
+import { useRouter } from "next/navigation";
 
 interface FeatureCardProps {
   icon: React.ElementType;
@@ -309,6 +310,7 @@ const NodeCluster = ({
 };
 
 export const HeroSection = () => {
+  const router = useRouter();
   const features = [
     {
       icon: GitBranch,
@@ -564,43 +566,42 @@ export const HeroSection = () => {
   };
 
   return (
-    <Section className="pt-32 pb-24 overflow-hidden">
+    <Section className="pt-32 pb-24 relative overflow-hidden">
       <div className="container mx-auto px-8">
-        <div className="max-w-5xl mx-auto text-center mb-20">
-          <motion.h1
-            className={`text-5xl sm:text-6xl md:text-7xl text-white/90 mb-8 ${instrumentSerif.className}`}
+        <div className="max-w-4xl mx-auto text-center mb-16">
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
+            transition={{ duration: 0.6 }}
           >
-            The Future of{" "}
-            <span className="text-[#00EFA6]">Distributed Computing</span> is
-            Coming
-          </motion.h1>
-
-          <motion.p
-            className="text-lg sm:text-xl text-white/60 max-w-2xl mx-auto mb-12"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
-          >
-            We're building a revolutionary platform for secure and efficient
-            distributed computing. Join our waitlist to be among the first to
-            experience it.
-          </motion.p>
-
-          <motion.button
-            onClick={scrollToCta}
-            className="group inline-flex items-center gap-2 px-8 py-4 bg-[#00EFA6] text-black hover:bg-[#00EFA6]/90 transition-all"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.4 }}
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-          >
-            <span className="text-base font-medium">Join Waitlist</span>
-            <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-          </motion.button>
+            <div className="mb-6">
+              <span className="text-[#00EFA6] text-sm tracking-widest uppercase">
+                Introducing
+              </span>
+            </div>
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl mb-8">
+              <span className={instrumentSerif.className}>Parity Protocol</span>
+            </h1>
+            <p className="text-xl text-white/60 mb-8 leading-relaxed">
+              A revolutionary decentralized computing platform by Blit Labs,
+              designed to transform the future of distributed computation and
+              verification.
+            </p>
+            <div className="flex items-center justify-center gap-4">
+              <button
+                onClick={scrollToCta}
+                className="px-8 py-4 bg-[#00EFA6] text-black font-medium rounded-lg hover:bg-[#00EFA6]/90 transition-colors duration-200"
+              >
+                Join Waitlist
+              </button>
+              <button
+                onClick={() => router.push("/get-started")}
+                className="px-8 py-4 border border-white/10 rounded-lg hover:bg-white/5 transition-colors duration-200 flex items-center gap-2"
+              >
+                Get Started <ArrowRight className="w-4 h-4" />
+              </button>
+            </div>
+          </motion.div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 lg:gap-24 items-center">
@@ -764,7 +765,7 @@ export const HeroSection = () => {
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: [0.1, 0.3, 0.1], scale: [0.9, 1.1, 0.9] }}
                 transition={{
-                  duration: 8, // Slowed down
+                  duration: 8,
                   repeat: Infinity,
                   repeatType: "reverse",
                 }}
@@ -774,7 +775,7 @@ export const HeroSection = () => {
                 initial={{ opacity: 0, rotate: 0 }}
                 animate={{ opacity: [0.1, 0.25, 0.1], rotate: 45 }}
                 transition={{
-                  duration: 10, // Slowed down
+                  duration: 10,
                   repeat: Infinity,
                   repeatType: "reverse",
                 }}
@@ -784,7 +785,7 @@ export const HeroSection = () => {
                 initial={{ opacity: 0, rotate: 0 }}
                 animate={{ opacity: [0.05, 0.2, 0.05], rotate: -30 }}
                 transition={{
-                  duration: 12, // Slowed down
+                  duration: 12,
                   repeat: Infinity,
                   repeatType: "reverse",
                 }}
