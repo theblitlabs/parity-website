@@ -97,8 +97,8 @@ export const Footer = () => {
                 transition={{ duration: 0.5 }}
                 className="text-sm text-white/50 max-w-xs leading-relaxed"
               >
-                A secure and efficient protocol for distributed computation,
-                powered by cryptographic guarantees.
+                A Distributed Compute Network enabling trustless task execution
+                with Docker-based validation and automated reward distribution.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, width: 0 }}
@@ -153,7 +153,7 @@ export const Footer = () => {
                   Contact
                 </motion.h3>
                 <motion.a
-                  href="mailto:labs.blit@gmail.com"
+                  href="mailto:theblitlabs@gmail.com"
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.3 }}
@@ -161,7 +161,7 @@ export const Footer = () => {
                 >
                   <div className="flex items-center gap-2">
                     <span className="text-base text-white/70 group-hover:text-white/90 transition-colors">
-                      labs.blit@gmail.com
+                      theblitlabs@gmail.com
                     </span>
                     <ChevronRight className="w-4 h-4 text-[#00EFA6]/50 group-hover:text-[#00EFA6] transition-colors transform group-hover:translate-x-1 duration-300" />
                   </div>
