@@ -1,6 +1,6 @@
-import { Instrument_Serif } from "next/font/google";
+import { Playfair_Display } from "next/font/google";
 
-export const instrumentSerif = Instrument_Serif({
+export const instrumentSerif = Playfair_Display({
   weight: "400",
   subsets: ["latin"],
 });

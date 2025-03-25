@@ -9,45 +9,47 @@ import {
   CheckCircle,
   Code,
   Server,
+  Wallet,
+  Database,
 } from "lucide-react";
 import { instrumentSerif } from "@/app/styles/fonts";
 
 const technologies = [
   {
-    icon: Shield,
-    title: "Task Verification",
+    icon: Wallet,
+    title: "Smart Contract System",
     description:
-      "Advanced verification methods ensure accurate and reliable task execution across the network.",
+      "ERC20-based PAR token implementation for reward distribution and task state management, with future staking mechanisms for runner accountability.",
+  },
+  {
+    icon: Database,
+    title: "Resource Tracking",
+    description:
+      "Precise measurement of computational resources via Docker stats: CPU/GPU time, memory usage, storage I/O, and network data for fair reward calculation.",
   },
   {
     icon: Network,
-    title: "Distributed Network",
+    title: "Webhook Architecture",
     description:
-      "A robust network architecture enabling efficient distribution and management of computational tasks.",
+      "Efficient task distribution and completion notifications through webhook system, enabling real-time runner coordination and task status updates.",
+  },
+  {
+    icon: Shield,
+    title: "Task Validation",
+    description:
+      "Secure task execution verification using Docker nonce validation and cross-runner result comparison for trustless computation integrity.",
   },
   {
     icon: Server,
-    title: "Resource Management",
+    title: "Runner Infrastructure",
     description:
-      "Intelligent allocation and monitoring of computational resources for optimal performance.",
-  },
-  {
-    icon: Code,
-    title: "Developer Tools",
-    description:
-      "Comprehensive SDK and APIs designed for seamless integration and development experience.",
-  },
-  {
-    icon: CheckCircle,
-    title: "Quality Assurance",
-    description:
-      "Built-in mechanisms for ensuring computation integrity and result validation.",
+      "Organized runner pools with Docker sandboxing for secure task execution, enabling torrent-like parallel processing across the network.",
   },
   {
     icon: Blocks,
-    title: "Task Orchestration",
+    title: "Task Distribution",
     description:
-      "Sophisticated task scheduling and coordination for complex computational workflows.",
+      "Dynamic task allocation system with priority-based queuing and automated pool management for efficient workload distribution.",
   },
 ];
 
@@ -75,18 +77,18 @@ export const TechnologySection = () => {
             >
               <div className="sticky top-8">
                 <div className="mb-4 text-[#00EFA6] text-sm tracking-widest uppercase">
-                  Parity Protocol Technology
+                  Protocol Architecture
                 </div>
                 <h2 className="text-5xl lg:text-6xl font-light tracking-tight text-white/90 mb-8">
-                  <span className={instrumentSerif.className}>Advanced</span>{" "}
-                  Infrastructure
+                  <span className={instrumentSerif.className}>Technical</span>{" "}
+                  Foundation
                 </h2>
                 <div className="h-[1px] w-16 bg-[#00EFA6]/20 mb-8" />
                 <p className="text-lg text-white/60 leading-relaxed">
-                  Blit Labs has engineered Parity Protocol to combine advanced
-                  distributed computing technologies with robust verification
-                  mechanisms, delivering reliable and efficient computational
-                  solutions at scale.
+                  Powered by Docker-based execution and webhook communication,
+                  the Parity Protocol delivers trustless distributed computing
+                  with precise resource tracking and automated reward
+                  distribution.
                 </p>
               </div>
             </motion.div>

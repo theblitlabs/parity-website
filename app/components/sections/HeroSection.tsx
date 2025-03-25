@@ -583,22 +583,18 @@ export const HeroSection = () => {
               <span className={instrumentSerif.className}>Parity Protocol</span>
             </h1>
             <p className="text-xl text-white/60 mb-8 leading-relaxed">
-              A revolutionary decentralized computing platform by Blit Labs,
-              designed to transform the future of distributed computation and
-              verification.
+              A revolutionary Distributed Verifiable Cloudless Computing
+              platform by Blit Labs, designed to transform the future of
+              distributed computation and verification.
             </p>
             <div className="flex items-center justify-center gap-4">
               <button
-                onClick={scrollToCta}
-                className="px-8 py-4 bg-[#00EFA6] text-black font-medium rounded-lg hover:bg-[#00EFA6]/90 transition-colors duration-200"
+                onClick={() =>
+                  window.open("https://github.com/theblitlabs/", "_blank")
+                }
+                className="group relative px-10 py-4 text-sm uppercase tracking-widest font-normal bg-transparent hover:bg-[#00EFA6] border border-[#00EFA6] text-[#00EFA6] hover:text-black transition-all duration-300 rounded-none overflow-hidden"
               >
-                Join Waitlist
-              </button>
-              <button
-                onClick={() => router.push("/get-started")}
-                className="px-8 py-4 border border-white/10 rounded-lg hover:bg-white/5 transition-colors duration-200 flex items-center gap-2"
-              >
-                Get Started <ArrowRight className="w-4 h-4" />
+                <span className="relative z-10">Join Network</span>
               </button>
             </div>
           </motion.div>
