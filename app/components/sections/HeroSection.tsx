@@ -576,25 +576,31 @@ export const HeroSection = () => {
           >
             <div className="mb-6">
               <span className="text-[#00EFA6] text-sm tracking-widest uppercase">
-                Introducing
+                In Development
               </span>
             </div>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl mb-8">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl mb-6 sm:mb-8">
               <span className={instrumentSerif.className}>Parity Protocol</span>
             </h1>
-            <p className="text-xl text-white/60 mb-8 leading-relaxed">
+            <p className="text-lg sm:text-xl text-white/60 mb-6 sm:mb-8 leading-relaxed max-w-2xl mx-auto">
               A revolutionary Distributed Verifiable Cloudless Computing
-              platform by Blit Labs, designed to transform the future of
-              distributed computation and verification.
+              platform currently under development by Blit Labs. Join us in
+              shaping the future of distributed computation and verification.
             </p>
-            <div className="flex items-center justify-center gap-4">
+            <div className="flex items-center justify-center gap-4 flex-col sm:flex-row">
               <button
                 onClick={() =>
                   window.open("https://github.com/theblitlabs/", "_blank")
                 }
-                className="group relative px-10 py-4 text-sm uppercase tracking-widest font-normal bg-transparent hover:bg-[#00EFA6] border border-[#00EFA6] text-[#00EFA6] hover:text-black transition-all duration-300 rounded-none overflow-hidden"
+                className="w-full sm:w-auto group relative px-6 sm:px-10 py-3 sm:py-4 text-sm uppercase tracking-widest font-normal bg-transparent hover:bg-[#00EFA6] border border-[#00EFA6] text-[#00EFA6] hover:text-black transition-all duration-300 rounded-none overflow-hidden"
               >
-                <span className="relative z-10">Join Network</span>
+                <span className="relative z-10">View on GitHub</span>
+              </button>
+              <button
+                onClick={scrollToCta}
+                className="w-full sm:w-auto group relative px-6 sm:px-10 py-3 sm:py-4 text-sm uppercase tracking-widest font-normal bg-[#00EFA6] hover:bg-[#00EFA6]/90 text-black transition-all duration-300 rounded-none overflow-hidden"
+              >
+                <span className="relative z-10">Join Waitlist</span>
               </button>
             </div>
           </motion.div>
@@ -605,7 +611,7 @@ export const HeroSection = () => {
           <div className="relative z-10 space-y-10 md:space-y-12">
             {/* Main heading */}
             <div className="relative">
-              <h1 className="text-[44px] leading-[1.1] sm:text-6xl lg:text-7xl font-light tracking-tight text-white/90">
+              <h1 className="text-3xl sm:text-[44px] lg:text-6xl xl:text-7xl font-light tracking-tight text-white/90">
                 <motion.span
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -789,37 +795,45 @@ export const HeroSection = () => {
 
               {/* Stats indicators */}
               <motion.div
-                className="absolute top-10 left-10 px-4 py-2 bg-white/5 border border-[#00EFA6]/20 backdrop-blur-sm"
+                className="absolute top-10 left-10 px-3 sm:px-4 py-2 bg-white/5 border border-[#00EFA6]/20 backdrop-blur-sm"
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 1.2, duration: 0.7 }}
               >
-                <div className="text-xs text-[#00EFA6]/70">EARLY ACCESS</div>
-                <div className="text-xl text-white/90 font-light">Q3 2025</div>
+                <div className="text-xs text-[#00EFA6]/70">STATUS</div>
+                <div className="text-base sm:text-xl text-white/90 font-light">
+                  IN DEV
+                </div>
                 <div className="text-[10px] text-white/40 mt-1">
-                  Coming Soon
+                  Alpha Coming Soon
                 </div>
               </motion.div>
 
               <motion.div
-                className="absolute bottom-10 right-10 px-4 py-2 bg-white/5 border border-[#00EFA6]/20 backdrop-blur-sm"
+                className="absolute bottom-10 right-10 px-3 sm:px-4 py-2 bg-white/5 border border-[#00EFA6]/20 backdrop-blur-sm"
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 1.4, duration: 0.7 }}
               >
-                <div className="text-xs text-[#00EFA6]/70">DEVELOPMENT</div>
-                <div className="text-xl text-white/90 font-light">80%</div>
-                <div className="text-[10px] text-white/40 mt-1">Complete</div>
+                <div className="text-xs text-[#00EFA6]/70">PROGRESS</div>
+                <div className="text-base sm:text-xl text-white/90 font-light">
+                  40%
+                </div>
+                <div className="text-[10px] text-white/40 mt-1">
+                  In Development
+                </div>
               </motion.div>
 
               <motion.div
-                className="absolute top-10 right-10 px-4 py-2 bg-white/5 border border-[#00EFA6]/20 backdrop-blur-sm"
+                className="absolute top-10 right-10 px-3 sm:px-4 py-2 bg-white/5 border border-[#00EFA6]/20 backdrop-blur-sm hidden sm:block"
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1.6, duration: 0.7 }}
               >
-                <div className="text-xs text-[#00EFA6]/70">WAITLIST</div>
-                <div className="text-xl text-white/90 font-light">OPEN</div>
+                <div className="text-xs text-[#00EFA6]/70">ALPHA</div>
+                <div className="text-base sm:text-xl text-white/90 font-light">
+                  Q4 2024
+                </div>
               </motion.div>
             </div>
           </div>
