@@ -596,12 +596,6 @@ export const HeroSection = () => {
               >
                 <span className="relative z-10">View on GitHub</span>
               </button>
-              <button
-                onClick={scrollToCta}
-                className="w-full sm:w-auto group relative px-6 sm:px-10 py-3 sm:py-4 text-sm uppercase tracking-widest font-normal bg-[#00EFA6] hover:bg-[#00EFA6]/90 text-black transition-all duration-300 rounded-none overflow-hidden"
-              >
-                <span className="relative z-10">Join Waitlist</span>
-              </button>
             </div>
           </motion.div>
         </div>
