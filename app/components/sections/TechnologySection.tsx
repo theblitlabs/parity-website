@@ -55,7 +55,7 @@ const technologies = [
 
 export const TechnologySection = () => {
   return (
-    <Section label="Technology" className="relative overflow-hidden py-40">
+    <Section label="Technology" className="relative overflow-hidden py-16">
       {/* Swiss-inspired grid background */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-black" />
