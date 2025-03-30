@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Parity Protocol - Decentralized Compute Protocol",
     description:
       "Parity Protocol is a decentralized compute protocol that enables secure, efficient, and scalable distributed computing across the network.",
-    url: "https://parity.protocol",
+    url: "https://parity.blitlabs.xyz",
     siteName: "Parity Protocol",
     images: [
       {
@@ -64,8 +64,8 @@ export const metadata: Metadata = {
     title: "Parity Protocol - Decentralized Compute Protocol",
     description:
       "Parity Protocol is a decentralized compute protocol that enables secure, efficient, and scalable distributed computing across the network.",
-    images: ["/logo.png"],
-    creator: "@parityprotocol",
+    images: ["/summary_card_large.png"],
+    creator: "@labsblit",
   },
   viewport: {
     width: "device-width",
